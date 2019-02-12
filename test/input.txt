@@ -42,13 +42,13 @@
   # should add correctly and list non private information
   add Adam Brown p/111111 e/adam@gmail.com a/111, alpha street
   list
-  add Betsy Choo pp/222222 pe/benchoo@nus.edu.sg pa/222, beta street t/secretive
+  add Dickson Ee p/444444 pe/dickson@nus.edu.sg a/444, delta street t/friends
   list
   add Charlie Dickson pp/333333 e/charlie.d@nus.edu.sg a/333, gamma street t/friends t/school
   list
-  add Dickson Ee p/444444 pe/dickson@nus.edu.sg a/444, delta street t/friends
-  list
   add Esther Potato p/555555 e/esther@not.a.real.potato pa/555, epsilon street t/tubers t/starchy
+  list
+  add Betsy Choo pp/222222 pe/benchoo@nus.edu.sg pa/222, beta street t/secretive
   list
 
   # should not allow adding duplicate persons
@@ -87,6 +87,15 @@
   viewall 5
 
 ##########################################################
+# test sort command
+##########################################################
+
+  # should sort the list
+  sort
+  # should list out the original unsorted list
+  list
+
+##########################################################
 # test find persons command
 ##########################################################
 
@@ -110,7 +119,8 @@
 # test delete person command
 ##########################################################
 
-# last active view: [1] betsy [2] charlie
+# last active view: [1] adam [2] dickson [3] charlie
+#                   [4] esther [5] betsy
 
   # should catch invalid args format
   delete
