@@ -82,6 +82,7 @@ public class UniquePersonList implements Iterable<Person> {
     }
 
 
+
     /**
      * Checks if the list contains an equivalent person as the given argument.
      * The {@link ReadOnlyPerson#isSamePerson} method is used for this comparison, which
@@ -120,6 +121,12 @@ public class UniquePersonList implements Iterable<Person> {
         if (!personFoundAndDeleted) {
             throw new PersonNotFoundException();
         }
+    }
+    /**
+     * Sorts the persons in the list in alphabetical order
+     */
+    public void sorts(){
+        Collections.sort(internalList);
     }
 
     /**
