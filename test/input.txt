@@ -119,8 +119,7 @@
 # test delete person command
 ##########################################################
 
-# last active view: [1] adam [2] dickson [3] charlie
-#                   [4] esther [5] betsy
+# last active view: [1] betsy [2] charlieickson
 
   # should catch invalid args format
   delete
