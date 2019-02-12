@@ -122,12 +122,6 @@ public class UniquePersonList implements Iterable<Person> {
             throw new PersonNotFoundException();
         }
     }
-    /**
-     * Sorts the persons in the list in alphabetical order
-     */
-    public void sorts(){
-        Collections.sort(internalList);
-    }
 
     /**
      * Clears all persons in list.
@@ -147,4 +141,12 @@ public class UniquePersonList implements Iterable<Person> {
                 || (other instanceof UniquePersonList // instanceof handles nulls
                         && this.internalList.equals(((UniquePersonList) other).internalList));
     }
+
+    /**
+     * Sorts the persons in the list in alphabetical order
+     */
+    public void sorts(){
+        Collections.sort(internalList);
+    }
+
 }
